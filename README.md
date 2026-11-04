@@ -14,10 +14,10 @@ between milestones, which is where most online calculators go wrong.
 
 | File | Contents |
 |---|---|
-| `data/push_ups.csv` / `data/push_ups.json` | Push-ups (1 minute): points for 0–60 reps × all 14 age groups (max 25 points) |
-| `data/sit_ups.csv` / `data/sit_ups.json` | Sit-ups (1 minute): points for 0–60 reps × all 14 age groups (max 25 points) |
-| `data/run_2_4km.csv` / `data/run_2_4km.json` | 2.4 km run: points for 10-second bands from 8:30 to 18:20 × all 14 age groups (max 50 points) |
-| `data/ippt_scoring_tables.json` | All three stations in one file, plus NSman award thresholds |
+| `push_ups.csv` / `push_ups.json` | Push-ups (1 minute): points for 0–60 reps × all 14 age groups (max 25 points) |
+| `sit_ups.csv` / `sit_ups.json` | Sit-ups (1 minute): points for 0–60 reps × all 14 age groups (max 25 points) |
+| `run_2_4km.csv` / `run_2_4km.json` | 2.4 km run: points for 10-second bands from 8:30 to 18:20 × all 14 age groups (max 50 points) |
+| `ippt_scoring_tables.json` | All three stations in one file, plus NSman award thresholds |
 | `LICENSE` | CC BY 4.0 — reuse freely with attribution (see below) |
 
 CSV columns are named in full (`age_group`, `push_ups_reps` /
@@ -83,7 +83,7 @@ scoring tables.
 This dataset follows the current tables, as disclosed on the
 methodology page.
 
-**Extraction provenance:** the CSV/JSON files in `data/` were generated
+**Extraction provenance:** the CSV/JSON files in this repo were generated
 directly from the verified tables in the live site's source
 (`extract_tables.py` in this repo), and the anchor above was re-checked
 in the generated files — not copied by hand.
@@ -113,5 +113,6 @@ dataset will be updated.
 - **Description:** "Exact Singapore SAF IPPT scoring tables (male) as open data — push-ups, sit-ups and 2.4 km run points for all 14 age groups, verified against published tables. CSV + JSON, CC BY 4.0."
 - **Website field:** https://ipptscores.com
 - **Topics:** `ippt`, `singapore`, `saf`, `fitness`, `open-data`, `csv`, `json`, `scoring-tables`, `nsmen`, `national-service`
-- Upload the whole pack: `README.md`, `LICENSE`, `extract_tables.py`,
-  and the `data/` folder. Make the repo **public**.
+- All files live in the repo root: `README.md`, `LICENSE`,
+  `extract_tables.py`, and the seven data files (CSV + JSON).
+  The repo is **public**.
